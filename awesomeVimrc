@@ -8,6 +8,10 @@ set guifont=Monaco:h11
 set guifontwide=NSimsun:h12
 set number
 
+
+set ofu=syntaxcomplete#Complete
+highlight OverLength ctermbg=red ctermfg=white guibg=#592929 
+
 if !exists("g:ycm_semantic_triggers")
   let g:ycm_semantic_triggers = {}
 endif
