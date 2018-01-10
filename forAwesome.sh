@@ -40,12 +40,11 @@ if [ ! -d "${yats}" ]; then
 fi
 
 youcompleteme=${vimPlugin}YouCompleteMe.vim
+if [ ! -d "${youcompleteme}" ]; then
+    echo -n "Is install YouCompleteMe(yes:enter y key):"
+    read operate
 
-echo -n "Is install YouCompleteMe(yes:enter y key):"
-read operate
-
-if [ "$operate" == "y" ]; then
-    if [ ! -d "${youcompleteme}" ]; then
+    if [ "$operate" == "y" ]; then
         git clone https://github.com/Valloric/YouCompleteMe ${youcompleteme}
         pushd ${youcompleteme}
         git submodule update --init --recursive

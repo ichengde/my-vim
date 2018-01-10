@@ -4,10 +4,10 @@ syntax enable
 set enc=utf-8
 set fileencoding=utf-8
 set fileencodings=ucs-bom,utf8,prc
-set guifont=Monaco:h11
-set guifontwide=NSimsun:h12
 set number
 
+filetype indent on
+set shiftwidth=2
 
 set ofu=syntaxcomplete#Complete
 highlight OverLength ctermbg=red ctermfg=white guibg=#592929 
@@ -16,3 +16,7 @@ if !exists("g:ycm_semantic_triggers")
   let g:ycm_semantic_triggers = {}
 endif
 let g:ycm_semantic_triggers['typescript'] = ['.']
+" [nerdtree](https://github.com/scrooloose/nerdtree)
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | endif
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
