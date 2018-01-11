@@ -55,6 +55,24 @@ if [ ! -d "${youcompleteme}" ]; then
 fi
 
 
+# operate-user
+operateUser=${vimPlugin}operate-user.vim
+
+if [ ! -d "${operateUser}" ]; then
+    git clone https://github.com/kana/vim-operator-user ${operateUser}
+fi
+
+
+
+# code format
+clangFormat=${vimPlugin}vim-clang-format.vim
+
+if [ ! -d "${clangFormat}" ]; then
+    git clone https://github.com/rhysd/vim-clang-format ${clangFormat}
+fi
+
+
+
 vimrc=${vimRuntime}my_configs.vim
 
 
