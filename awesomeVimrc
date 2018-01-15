@@ -20,3 +20,7 @@ let g:ycm_semantic_triggers['typescript'] = ['.']
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | endif
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
+autocmd FileType typescript nmap <buffer> <Leader>2 <Plug>(TsuquyomiRenameSymbol)
+autocmd FileType typescript nmap <buffer> <Leader>3 <Plug>(TsuquyomiRenameSymbolC)
+autocmd FileType typescript nmap <buffer> <Leader>t <Plug>(ClangFormat)
