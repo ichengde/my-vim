@@ -23,4 +23,11 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 
 autocmd FileType typescript nmap <buffer> <Leader>2 <Plug>(TsuquyomiRenameSymbol)
 autocmd FileType typescript nmap <buffer> <Leader>3 <Plug>(TsuquyomiRenameSymbolC)
-autocmd FileType typescript nmap <buffer> <Leader>t <Plug>(ClangFormat)
+
+
+""""""""""""""""""""""""""""""
+" => ClangFormat plugin
+""""""""""""""""""""""""""""""
+nmap <Leader>t :ClangFormat<cr>
+
+

@@ -8,9 +8,13 @@ it supports TypeScript syntax highlighting, and provides language service.
 #### Windows
 You can install [gvim](https://vim.sourceforge.io/download.php#pc) which supports many interfaces, such as Python and Ruby.
 
-### Plugins
-
-
+## Plugins
+[tsuquyomi](https://github.com/Quramy/tsuquyomi.git): Make your Vim a TypeScript IDE.
+[yats](https://github.com/HerringtonDarkholme/yats.vim): TypeScript Syntax.
+[vim-operator-user](https://github.com/kana/vim-operator-user): Define your own operator easily. 
+[youcompleteme](https://github.com/Valloric/YouCompleteMe): a code-completion engine for Vim.
+[vim-clang-format](https://github.com/rhysd/vim-clang-format): formats your code with specific coding style.
+[vimproc.vim](https://github.com/Shougo/vimproc.vim.git): Interactive command execution in Vim 
 
 ## The Awesome Included Plugins
 
