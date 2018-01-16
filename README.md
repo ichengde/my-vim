@@ -1,24 +1,25 @@
 # The TypeScript Vim Configure
 
 ### A usable config to write TypeScript for vim
-based on [vimrc](https://github.com/amix/vimrc)
+It based on [vimrc](https://github.com/amix/vimrc)
 The Awesome: Includes a ton of useful plugins, color schemes, and configuration
-it supports TypeScript syntax highlighting, and provides language service.
+It supports TypeScript syntax highlighting, and provides language service.
 
 #### Windows
 You can install [gvim](https://vim.sourceforge.io/download.php#pc) which supports many interfaces, such as Python and Ruby.
 
 ## Plugins
-[tsuquyomi](https://github.com/Quramy/tsuquyomi.git): Make your Vim a TypeScript IDE.
-[yats](https://github.com/HerringtonDarkholme/yats.vim): TypeScript Syntax.
-[vim-operator-user](https://github.com/kana/vim-operator-user): Define your own operator easily. 
-[youcompleteme](https://github.com/Valloric/YouCompleteMe): a code-completion engine for Vim.
-[vim-clang-format](https://github.com/rhysd/vim-clang-format): formats your code with specific coding style.
-[vimproc.vim](https://github.com/Shougo/vimproc.vim.git): Interactive command execution in Vim 
+
+* [tsuquyomi](https://github.com/Quramy/tsuquyomi.git): Make your Vim a TypeScript IDE.
+* [yats](https://github.com/HerringtonDarkholme/yats.vim): TypeScript Syntax.
+* [vim-operator-user](https://github.com/kana/vim-operator-user): Define your own operator easily. 
+* [youcompleteme](https://github.com/Valloric/YouCompleteMe): a code-completion engine for Vim.
+* [vim-clang-format](https://github.com/rhysd/vim-clang-format): formats your code with specific coding style.
+* [vimproc.vim](https://github.com/Shougo/vimproc.vim.git): Interactive command execution in Vim 
 
 ## The Awesome Included Plugins
 
-I recommend reading the docs of these plugins to understand them better. Each plugin provides a much better Vim experience!
+Each plugin provides a much better Vim experience!
 
 * [ack.vim](https://github.com/mileszs/ack.vim): Vim plugin for `the_silver_searcher` (ag) or ack -- a wicked fast grep
 * [bufexplorer.zip](https://github.com/vim-scripts/bufexplorer.zip): Quickly and easily switch between buffers. This plugin can be opened with `<leader+o>`
