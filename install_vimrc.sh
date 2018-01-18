@@ -77,7 +77,7 @@ vimrc=${vimRuntime}my_configs.vim
 folderSet=${vimRuntime}folderSet.vim
 pluginSet=${vimRuntime}pluginSet.vim
 
-cp awesomeVimrc ${vimrc}
-cp folderSet ${folderSet}
-cp pluginSet ${pluginSet}
+cp config.vim ${vimrc}
+cp folderSet.vim ${folderSet}
+cp pluginSet.vim ${pluginSet}
 

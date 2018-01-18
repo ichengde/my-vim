@@ -6,9 +6,15 @@ set fileencodings=ucs-bom,utf8,prc
 set number
 
 filetype indent on
+" tab space
 set shiftwidth=2
 
+" font config
+set gfn=IBM\ Plex\ Mono:h10,Source\ Code\ Pro:h12,Bitstream\ Vera\ Sans\ Mono:h11
+" code format
 nmap <Leader>- :set autochdir<cr>
+nmap <Leader>= gg=G
 
 source ~/.vim_runtime/folderSet.vim
 source ~/.vim_runtime/pluginSet.vim
+

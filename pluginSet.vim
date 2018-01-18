@@ -30,6 +30,6 @@ map <Leader>` :ClangFormat<cr>
 let g:clang_format#style_options = {
             \ 'ColumnLimit' : '0',
             \ 'Language' : 'JavaScript',
-            \ 'BasedOnStyle' : 'Mozilla',
+            \ 'BasedOnStyle' : 'Google',
             \ }
 
