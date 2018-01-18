@@ -32,12 +32,4 @@ let g:clang_format#style_options = {
             \ 'Language' : 'JavaScript',
             \ 'BasedOnStyle' : 'Mozilla',
             \ }
-" \ 'JavaScriptQuotes' : 'Single',
-"            \ 'BreakBeforeBraces' : 'Custom',
-"            \ 'BraceWrapping' : {
-"            \     'AfterClass': 'false',
-"            \     'AfterFunction' : 'false',
-"            \     'BeforeCatch' : 'false',
-"            \     'IndentBraces' : 'false', 
-"            \ }
 
