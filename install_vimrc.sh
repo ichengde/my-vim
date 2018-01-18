@@ -64,13 +64,20 @@ fi
 
 
 
-# code format
-clangFormat=${vimPlugin}vim-clang-format.vim
+## code format
+#clangFormat=${vimPlugin}vim-clang-format.vim
+#
+#if [ ! -d "${clangFormat}" ]; then
+#    git clone https://github.com/rhysd/vim-clang-format ${clangFormat}
+#fi
 
-if [ ! -d "${clangFormat}" ]; then
-    git clone https://github.com/rhysd/vim-clang-format ${clangFormat}
+
+# jsFormat code format
+jsFormat=${vimPlugin}vim-js-indent.vim
+
+if [ ! -d "${jsFormat}" ]; then
+    git clone https://github.com/jason0x43/vim-js-indent ${jsFormat}
 fi
-
 
 
 vimrc=${vimRuntime}my_configs.vim

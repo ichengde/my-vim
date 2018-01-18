@@ -14,9 +14,9 @@ You can install [gvim](https://vim.sourceforge.io/download.php#pc) which support
 * [yats](https://github.com/HerringtonDarkholme/yats.vim): TypeScript Syntax.
 * [vim-operator-user](https://github.com/kana/vim-operator-user): Define your own operator easily. 
 * [youcompleteme](https://github.com/Valloric/YouCompleteMe): a code-completion engine for Vim.
-* [vim-clang-format](https://github.com/rhysd/vim-clang-format): formats your code with specific coding style.
-* [vimproc.vim](https://github.com/Shougo/vimproc.vim.git): Interactive execution in Vim 
-* [vim-clang-format](https://github.com/rhysd/vim-clang-format): Vim plugin for clang-format, a formatter for C, C++, Obj-C, Java, JavaScript, TypeScript and ProtoBuf.
+* [vimproc.vim](https://github.com/Shougo/vimproc.vim.git): Interactive execution in Vim.
+* deprecated [vim-clang-format](https://github.com/rhysd/vim-clang-format): Vim plugin for clang-format, a formatter for C, C++, Obj-C, Java, JavaScript, TypeScript and ProtoBuf.
+* [vim-js-indent](https://github.com/jason0x43/vim-js-indent): Vim indenter for standalone and embedded JavaScript.
 
 ## The Awesome Included Plugins
 
