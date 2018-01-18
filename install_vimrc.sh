@@ -12,7 +12,7 @@ fi
 
 
 if [ ! -d "${vimRuntime}" ]; then
-    git clone --depth=1 https://github.com/amix/vimrc.git ~/.vim_runtime
+    git clone --depth=1 https://github.com/ichengde/baseVimrc.git ~/.vim_runtime
     sh ${vimRuntime}install_awesome_vimrc.sh
 fi
 
