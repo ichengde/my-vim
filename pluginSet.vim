@@ -32,4 +32,11 @@ let g:clang_format#style_options = {
             \ 'Language' : 'JavaScript',
             \ 'BasedOnStyle' : 'Google',
             \ }
+" deoplete
+let g:deoplete#enable_at_startup = 1
 
+
+"Clang completion plugin for vim
+"
+let g:clang_c_options = '-std=gnu11'
+let g:clang_cpp_options = '-std=c++11 -stdlib=libc++'

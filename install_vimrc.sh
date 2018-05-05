@@ -1,9 +1,22 @@
+!/bin/bash
 
 vimRuntime=~/.vim_runtime/
 vimPlugin=${vimRuntime}my_plugins/
 
-echo -n "Is config vimrc(yes:enter y key):"
+echo -n "Is config vimrc (yes:enter y key):"
 read operate
+
+#echo -n "Is install deoplete.nvim (yes:enter y key):"
+#read deopleteOperate
+
+echo -n "Is install YouCompleteMe (yes:enter y key):"
+read youCompleteiMeOperate
+
+echo -n "Is install vimclang for Clang (yes:enter y key):"
+read vimclangOperate
+
+echo -n "Is install clang format (yes:enter y key):"
+read clangFormatOperate
 
 if [ "$operate" != "y" ]; then
     exit 1
@@ -39,20 +52,6 @@ if [ ! -d "${yats}" ]; then
     git clone https://github.com/HerringtonDarkholme/yats.vim ${yats}
 fi
 
-youcompleteme=${vimPlugin}YouCompleteMe.vim
-if [ ! -d "${youcompleteme}" ]; then
-    echo -n "Is install YouCompleteMe(yes:enter y key):"
-    read operate
-
-    if [ "$operate" == "y" ]; then
-        git clone https://github.com/Valloric/YouCompleteMe ${youcompleteme}
-        pushd ${youcompleteme}
-        git submodule update --init --recursive
-        # read https://github.com/Valloric/YouCompleteMe#windows sections, windows 7 need install [MSBuild](https://www.visualstudio.com/zh-hans/downloads/) and download [sdk](https://www.visualstudio.com/zh-hans/downloads/). It is windows build tool chains for YouCompleteMe install. and it maybe also install gvim which support many many interfaces.
-        python ./install.py
-        popd
-    fi
-fi
 
 
 # operate-user
@@ -64,12 +63,14 @@ fi
 
 
 
-## code format
-#clangFormat=${vimPlugin}vim-clang-format.vim
-#
-#if [ ! -d "${clangFormat}" ]; then
-#    git clone https://github.com/rhysd/vim-clang-format ${clangFormat}
-#fi
+# code format
+clangFormat=${vimPlugin}vim-clang-format.vim
+
+if [ ! -d "${clangFormat}" ]; then
+    if [ "$clangFormatOperate" == "y" ]; then
+      git clone https://github.com/rhysd/vim-clang-format ${clangFormat}
+    fi
+fi
 
 
 # jsFormat code format
@@ -79,6 +80,35 @@ if [ ! -d "${jsFormat}" ]; then
     git clone https://github.com/jason0x43/vim-js-indent ${jsFormat}
 fi
 
+youcompleteme=${vimPlugin}YouCompleteMe.vim
+if [ ! -d "${youcompleteme}" ]; then
+    if [ "$youCompleteMeOperate" == "y" ]; then
+        git clone https://github.com/Valloric/YouCompleteMe ${youcompleteme}
+        pushd ${youcompleteme}
+        git submodule update --init --recursive
+        # read https://github.com/Valloric/YouCompleteMe#windows sections, windows 7 need install [MSBuild](https://www.visualstudio.com/zh-hans/downloads/) and download [sdk](https://www.visualstudio.com/zh-hans/downloads/). It is windows build tool chains for YouCompleteMe install. and it maybe also install gvim which support many many interfaces.
+        python ./install.py
+        popd
+    fi
+fi
+
+
+vimclang=${vimPlugin}vim-clang.vim
+if [ ! -d "${vimclang}" ]; then
+    if [ "$vimclangOperate" == "y" ]; then
+        git clone https://github.com/justmao945/vim-clang.git ${vimclang}
+    fi
+fi
+
+
+deoplete=${vimPlugin}deoplete.nvim
+if [ ! -d "${deoplete}" ]; then
+    if [ "$deopleteOperate" == "y" ]; then
+        git clone https://github.com/roxma/nvim-yarp.git ${vimPlugin}/nvim-yarp
+        git clone https://github.com/roxma/vim-hug-neovim-rpc.git ${vimPlugin}/vim-hug-neovim-rpc.vim
+        git clone https://github.com/Shougo/deoplete.nvim.git ${deoplete}
+    fi
+fi
 
 vimrc=${vimRuntime}my_configs.vim
 folderSet=${vimRuntime}folderSet.vim
