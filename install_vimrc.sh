@@ -1,4 +1,4 @@
-!/bin/bash
+#!/bin/bash
 
 vimRuntime=~/.vim_runtime/
 vimPlugin=${vimRuntime}my_plugins/
@@ -10,7 +10,7 @@ read operate
 #read deopleteOperate
 
 echo -n "Is install YouCompleteMe (yes:enter y key):"
-read youCompleteiMeOperate
+read youCompleteMeOperate
 
 echo -n "Is install vimclang for Clang (yes:enter y key):"
 read vimclangOperate
