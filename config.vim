@@ -18,3 +18,11 @@ nmap <Leader>= gg=G
 source ~/.vim_runtime/folderSet.vim
 source ~/.vim_runtime/pluginSet.vim
 
+" ubuntu include path
+set path+=/usr/include/**
+
+" some project can use it, deprecated
+set path+=./**
+
+"ctags
+set tags=./tags,tags,/usr/include/tags

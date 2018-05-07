@@ -10,6 +10,7 @@ if !exists("g:ycm_semantic_triggers")
 endif
 let g:ycm_semantic_triggers['typescript'] = ['.']
 
+
 """"""""""""""""""""""""""""""
 " => nerdtree plugin [nerdtree](https://github.com/scrooloose/nerdtree)
 """"""""""""""""""""""""""""""
@@ -34,6 +35,7 @@ let g:clang_format#style_options = {
             \ }
 " deoplete
 let g:deoplete#enable_at_startup = 1
+
 
 
 "Clang completion plugin for vim
