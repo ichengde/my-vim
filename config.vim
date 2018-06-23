@@ -4,6 +4,7 @@ set enc=utf-8
 set fileencoding=utf-8
 set fileencodings=ucs-bom,utf8,prc
 set number
+set paste
 
 filetype indent on
 " tab space
